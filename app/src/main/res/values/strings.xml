@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BlogSamples</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_1">Action 1</string>
+    <string name="action_2">Action 2</string>
+
+    <string name="last_post">Last Posts</string>
+    <string name="category">Category</string>
+    <string name="loading">Loading...</string>
+</resources>

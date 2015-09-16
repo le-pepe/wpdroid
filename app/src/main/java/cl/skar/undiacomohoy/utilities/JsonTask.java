@@ -4,7 +4,12 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 
+import java.util.concurrent.ExecutionException;
+
+import javax.xml.transform.Result;
+
 import cl.skar.undiacomohoy.R;
+import cl.skar.undiacomohoy.wp.WP_Site;
 
 /**
  * Created by INSATSA.S.A on 14-09-2015.
@@ -39,10 +44,33 @@ public class JsonTask extends AsyncTask<String, Void, String> {
         }
     }
 
+
+
     @Override
     protected String doInBackground(String... params) {
-        String url = (params.length == 0)?null:params[0];
-        String jsonString = JSON.getJson(url);
+        String id = (params.length == 0)?null:params[0];
+        String url;
+        switch (type){
+            case "Author":
+                url = WP_Site.AUTHOR;
+                break;
+            case  "Category":
+                url = WP_Site.CATEGORIES;
+                break;
+            case "Page":
+                url = WP_Site.PAGES;
+                break;
+            case "Post":
+                url= WP_Site.POSTS;
+                break;
+            case "Tag":
+                url = WP_Site.TAGS;
+                break;
+            case "Comment":
+                url = WP_Site.COMMENTS;
+                break;
+        }
+        //String jsonString = JSON.getJson(url);
 
         return null;
     }

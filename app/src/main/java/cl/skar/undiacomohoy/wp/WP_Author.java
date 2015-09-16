@@ -4,14 +4,7 @@ package cl.skar.undiacomohoy.wp;
  * Created by INSATSA.S.A on 14-09-2015.
  */
 public class WP_Author {
-    public static final String KEY_ID = "id";
-    public static final String KEY_SLUG = "slug";
-    public static final String KEY_NAME = "name";
-    public static final String KEY_FIRST_NAME = "first_name";
-    public static final String KEY_LAST_NAME = "last_name";
-    public static final String KEY_NICKNAME = "nickname";
-    public static final String KEY_URL = "url";
-    public static final String KEY_DESCRIPTION = "description";
+
     private String id = null;
     private String slug = null;
     private String name = null;
